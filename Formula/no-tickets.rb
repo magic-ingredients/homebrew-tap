@@ -1,25 +1,25 @@
 class NoTickets < Formula
   desc "no-tickets CLI — Rust port (Phase 2/3 of cross-platform-cli-binary fix)"
   homepage "https://github.com/magic-ingredients/no-tickets"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.2/no-tickets-aarch64-apple-darwin.tar.xz"
-      sha256 "ebb0cba3080dc97db7f50ab7f5d383143b085fe32b3d145880d84284cf76d683"
+      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.3/no-tickets-aarch64-apple-darwin.tar.gz"
+      sha256 "32a6b3761a874ffa85d78a603de5e1cc31043a3130123e4244201b4bd6fac7aa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.2/no-tickets-x86_64-apple-darwin.tar.xz"
-      sha256 "b753233d4911d3e600fdeb7a47b890cdfff9db98aef2e9bdf3f90c07fd775dee"
+      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.3/no-tickets-x86_64-apple-darwin.tar.gz"
+      sha256 "09b6446c22469818e1ca7b1dfbc70eff187615526a02ee76c5f8cf305ca26516"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.2/no-tickets-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "34f2b64ff7a8f33692aaf78a2a59b392e312bf5084939c835c6564f249a5f677"
+      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.3/no-tickets-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "b6b3244a7f13e1b256ba5a24683736580ef943503ea04f375802a36b7d71057e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.2/no-tickets-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "b380c21803f2fa5c8b50b95607dfedf96ad2f06670717369639ca4929db2aaa6"
+      url "https://github.com/magic-ingredients/no-tickets/releases/download/v0.1.3/no-tickets-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9a4e28562cf56f7e02e3ac67c9288c85f4f4151b4a082c2d7459417c7af9eb90"
     end
   end
   license "Apache-2.0"
