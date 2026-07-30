@@ -1,9 +1,9 @@
 class TinyBrain < Formula
   desc "Tiny Brain AI assistant — modular TDD workflow CLI"
   homepage "https://github.com/magic-ingredients/tiny-brain-releases"
-  url "https://registry.npmjs.org/@magic-ingredients/tiny-brain/-/tiny-brain-0.27.2.tgz"
-  version "0.27.2"
-  sha256 "e3c3df5ada44bdeadc4fc219cf317534b8c594c72125c8f94c770db8143bcaa2"
+  url "https://registry.npmjs.org/@magic-ingredients/tiny-brain/-/tiny-brain-0.28.1.tgz"
+  version "0.28.1"
+  sha256 "659844928bdca827b0350d15cfe78ec5f2630040f9f5d898b2d896e0a7d47618"
   license "MIT"
 
   depends_on "node"
@@ -15,12 +15,13 @@ class TinyBrain < Formula
 
   test do
     system "#{bin}/tiny-brain", "--version"
+    system "#{bin}/tb", "--version"
   end
 
   def caveats
     <<~EOS
-      To install the Claude Code plugin, run:
-        tiny-brain install plugin
+      To set up tiny-brain with your agent clients, run:
+        tiny-brain configure
     EOS
   end
 end
