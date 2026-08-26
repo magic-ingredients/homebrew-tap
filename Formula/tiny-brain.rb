@@ -1,9 +1,9 @@
 class TinyBrain < Formula
   desc "Tiny Brain AI assistant — modular TDD workflow CLI"
   homepage "https://github.com/magic-ingredients/tiny-brain-releases"
-  url "https://registry.npmjs.org/@magic-ingredients/tiny-brain/-/tiny-brain-0.29.0.tgz"
-  version "0.29.0"
-  sha256 "0fa03c5d0ee336d3cdc007df9918c5e109f62e9867679a52d498639bbbc55c75"
+  url "https://registry.npmjs.org/@magic-ingredients/tiny-brain/-/tiny-brain-0.29.1.tgz"
+  version "0.29.1"
+  sha256 "0280682b9de80976997d5a766638a19fb07c51c116006c48ba8726058791f6f4"
   license "MIT"
 
   depends_on "node"
